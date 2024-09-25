@@ -1,13 +1,10 @@
 const { Router } = require('express');
-const cors = require('cors'); // Import cors
-const TodoRecord = require('../records/todo.record'); // Correct import
+const cors = require('cors');
+const TodoRecord = require('../records/todo.record');
 const { pool } = require('../utils/db');
 
 const TodoRouter = Router();
-
-// Use cors middleware
 TodoRouter.use(cors());
-console.log(cors);
 
 TodoRouter.get('/', async (req, res) => {
   try {
@@ -43,4 +40,4 @@ TodoRouter.get('/', async (req, res) => {
     }
   });
 
-module.exports = TodoRouter;
+module.exports = { TodoRouter };

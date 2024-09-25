@@ -14,5 +14,8 @@
     "express": "4.21.0",
     "pg": "8.13.0",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17"
   }
 }
