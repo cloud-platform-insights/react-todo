@@ -7,6 +7,7 @@ const TodoRouter = Router();
 
 // Use cors middleware
 TodoRouter.use(cors());
+console.log(cors);
 
 TodoRouter.get('/', async (req, res) => {
   try {
