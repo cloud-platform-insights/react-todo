@@ -11,7 +11,6 @@ TodoRouter.use(cors());
 TodoRouter.get('/', async (req, res) => {
   try {
     const todosList = await TodoRecord.listAll();
-    // console.log("successfully got todos.")
     res.send(todosList);
   } catch (error) {
     console.log(error); 
