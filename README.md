@@ -19,6 +19,7 @@ psql todo
 
 ----
 
+CREATE DATABASE todo; 
 
 CREATE USER myuser WITH PASSWORD 'mypassword';
 GRANT ALL PRIVILEGES ON DATABASE todo TO myuser;
@@ -29,4 +30,15 @@ CREATE TABLE todos (
 );
 GRANT ALL PRIVILEGES ON TABLE todos TO myuser;
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO myuser;
+```
+
+
+## connect via ec2 
+
+```
+psql \
+   --host=todo-database.cj02c2008vgi.us-east-2.rds.amazonaws.com \
+   --port=5432 \
+   --username=postgres \
+   --password \
 ```
