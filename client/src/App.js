@@ -5,7 +5,7 @@ import Layout from './components/Layout';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 
-const serverUrl = "http://localhost:8080";
+const serverUrl = "http://18.227.183.81:8080";
 
 function App() {
   const [todo, setTodo] = useState('');
